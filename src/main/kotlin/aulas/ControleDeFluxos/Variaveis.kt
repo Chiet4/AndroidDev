@@ -29,6 +29,11 @@ fun main() {
     println("------------------------------------------")
     println("Capacidade de variaveis")
     capacidade()
+
+    println("------------------------------------------")
+    println("Constantes")
+    constantes()
+
 }
 
 fun capacidade() {
@@ -36,4 +41,20 @@ fun capacidade() {
     println("UInt máximo: ${UInt.MAX_VALUE} UInt mínimo: ${UInt.MIN_VALUE}")
     println("UShort máximo: ${UShort.MAX_VALUE} UShort mínimo: ${UShort.MIN_VALUE}")
     println("Long máximo: ${Long.MAX_VALUE} Long mínimo: ${Long.MIN_VALUE}")
+}
+
+fun constantes() {
+    val t:Int = 19
+    val str: String = "Total"
+
+    // São constantes logo não podem ser alteradas depois de definidas
+    //t++
+    //str += " somando"
+
+    // tipo boolean, pode ser usada como flag
+    var b:Boolean = false
+
+    println(t)
+    println(str)
+    println(b)
 }
